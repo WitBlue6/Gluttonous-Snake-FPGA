@@ -12,7 +12,7 @@ The project is built on Vivado 2023.2. There is no IP core used so it's easy to 
 
 * Display a red box on screen that can be **controlled by pressing bottom** to change the direction the box moves. 
 
-<video src="./videos/a.mp4" autopla="true" controls="controls" width="640" height="480"></video>
+<video controls src="./videos/a.mp4" title="Current Result"></video>
 
 ## 4.Update
 
