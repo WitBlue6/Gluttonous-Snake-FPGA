@@ -88,6 +88,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   {D:/Vivado Projects/ex3_2025/ex3_2025.srcs/sources_1/new/bottom_control.v}
+  {D:/Vivado Projects/ex3_2025/ex3_2025.srcs/sources_1/new/egg_fresh.v}
   {D:/Vivado Projects/ex3_2025/ex3_2025.srcs/sources_1/new/vga_display.v}
   {D:/Vivado Projects/ex3_2025/ex3_2025.srcs/sources_1/new/vga_driver.v}
   {D:/Vivado Projects/ex3_2025/ex3_2025.srcs/sources_1/new/ex3_2025.v}

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Apr  9 17:21:17 2025
+| Date         : Wed Apr 16 16:14:13 2025
 | Host         : LAPTOP-1P0JTJPF running 64-bit major release  (build 9200)
 | Command      : report_drc -file ex3_2025_drc_routed.rpt -pb ex3_2025_drc_routed.pb -rpx ex3_2025_drc_routed.rpx
 | Design       : ex3_2025
@@ -49,7 +49,7 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net u_vga_driver/pic_show is a gated clock net sourced by a combinational pin u_vga_driver/data_reg[7]_i_1/O, cell u_vga_driver/data_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_vga_driver/pic_show is a gated clock net sourced by a combinational pin u_vga_driver/is_egg_reg_i_1/O, cell u_vga_driver/is_egg_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

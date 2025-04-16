@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Apr  9 17:20:56 2025
+| Date         : Wed Apr 16 16:13:53 2025
 | Host         : LAPTOP-1P0JTJPF running 64-bit major release  (build 9200)
 | Command      : report_drc -file ex3_2025_drc_opted.rpt -pb ex3_2025_drc_opted.pb -rpx ex3_2025_drc_opted.rpx
 | Design       : ex3_2025

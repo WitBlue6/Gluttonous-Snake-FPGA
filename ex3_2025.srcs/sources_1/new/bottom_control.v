@@ -26,7 +26,8 @@ module bottom_control(
 	output reg [9:0] snake_h,
 	output reg [9:0] snake_v,
 	output  [9:0] egg_h,
-	output  [9:0] egg_v
+	output  [9:0] egg_v,
+	output  [9:0] score
 );
 	
 //按键消抖
@@ -135,9 +136,16 @@ always @(*)begin
 		n_state <= c_state;
 end
 
+wire [9:0] score;  //得分000~999
+
 //刷新豆子
 egg_fresh u_egg_fresh(
-	.clk(clk)
+	.clk(clk),
+	.snake_h(snake_h),
+	.snake_v(snake_v),
+	.egg_h(egg_h),
+	.egg_v(egg_v),
+	.score(score)
 );
 
 endmodule

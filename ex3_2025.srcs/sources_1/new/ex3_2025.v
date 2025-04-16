@@ -46,6 +46,9 @@ wire [9:0] snake_v;
 wire [9:0] egg_h;
 wire [9:0] egg_v;
 
+//score
+wire [9:0] score;
+
 wire [11:0] data;
 
 reg [1:0]  countera1 = 2'd0;
@@ -85,7 +88,8 @@ bottom_control u_bottom_control(
 	.snake_h(snake_h),
 	.snake_v(snake_v),
 	.egg_h(egg_h),
-	.egg_v(egg_v)
+	.egg_v(egg_v),
+	.score(score)
 );
 
 endmodule
