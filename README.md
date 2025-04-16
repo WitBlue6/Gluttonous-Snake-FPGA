@@ -8,13 +8,16 @@ This repository contains my project in a course, which is trying to accomplish a
 
 The project is built on Vivado 2023.2. There is no IP core used so it's easy to be ported.
 
-## 3.Current Fuction
+## 3.Demo
 
-* Display a red box on screen that can be **controlled by pressing bottom** to change the direction the box moves. 
+* Now the red snake can eat the score by pushing bottom to touch it.
 
-https://github.com/user-attachments/assets/deb0352f-3977-4e77-9e05-c27aae88ee5f
+https://github.com/user-attachments/assets/3188fbb4-8b55-4ab3-bdf8-0fc12437180b
+
 
 ## 4.Update
+2025-04-16  
+Add random score generating. The snake can eat it now.
 
 2025-04-09  
 Initial commit.
