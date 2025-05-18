@@ -1,0 +1,97 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun May 18 11:44:27 2025
+| Host         : LAPTOP-5CNT15AU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ex3_2025_control_sets_placed.rpt
+| Design       : ex3_2025
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    67 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     5 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |           12 |
+| No           | No                    | Yes                    |             142 |           66 |
+| No           | Yes                   | No                     |              12 |            5 |
+| Yes          | No                    | No                     |              22 |            9 |
+| Yes          | No                    | Yes                    |              90 |           31 |
+| Yes          | Yes                   | No                     |            1197 |          352 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |              Enable Signal             |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  clk_BUFG                     |                                        | u_vga_driver/vga_hsync0             |                1 |              1 |         1.00 |
+|  clk_BUFG                     |                                        | u_vga_driver/vga_vsync0             |                1 |              1 |         1.00 |
+|  u_vga_driver/blank_reg_rep_1 |                                        |                                     |                1 |              1 |         1.00 |
+|  u_vga_driver/E[0]            |                                        |                                     |                1 |              2 |         2.00 |
+|  mclk_IBUF_BUFG               | u_key_filter/bottom_scan               | u_snake_control/rst_n               |                2 |              5 |         2.50 |
+|  clk_BUFG                     |                                        |                                     |                4 |              5 |         1.25 |
+|  mclk_IBUF_BUFG               | u_snake_control/cubex[0][5]_i_1_n_0    |                                     |                2 |              6 |         3.00 |
+|  mclk_IBUF_BUFG               | u_snake_control/cubey[0][5]_i_1_n_0    |                                     |                2 |              6 |         3.00 |
+|  mclk_IBUF_BUFG               | u_snake_control/length[6]_i_1_n_0      | u_snake_control/rst_n               |                3 |              7 |         2.33 |
+|  clk_BUFG                     | u_score_display/score_region_active[0] | u_snake_control/rst_n               |                3 |              7 |         2.33 |
+|  clk_BUFG                     | u_score_display/score_region_active[1] | u_snake_control/rst_n               |                5 |              7 |         1.40 |
+|  clk_BUFG                     |                                        | u_vga_driver/hCounter[9]_i_1_n_0    |                3 |             10 |         3.33 |
+|  clk_BUFG                     | u_vga_driver/hCounter[9]_i_1_n_0       |                                     |                5 |             10 |         2.00 |
+|  mclk_IBUF_BUFG               | u_egg_fresh/add                        | u_snake_control/rst_n               |                4 |             11 |         2.75 |
+|  mclk_IBUF_BUFG               |                                        |                                     |                6 |             14 |         2.33 |
+|  mclk_IBUF_BUFG               | u_game_control/cnt                     | u_snake_control/rst_n               |                7 |             32 |         4.57 |
+|  mclk_IBUF_BUFG               | u_game_control/cnt_0                   | u_snake_control/rst_n               |               11 |             32 |         2.91 |
+|  mclk_IBUF_BUFG               |                                        | u_snake_control/rst_n               |               66 |            142 |         2.15 |
+|  mclk_IBUF_BUFG               | u_snake_control/cubex                  | u_snake_control/cubex[1][5]_i_1_n_0 |              348 |           1186 |         3.41 |
++-------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+
+
