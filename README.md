@@ -10,7 +10,7 @@ The Snake Game has achieved almost all modules and they are shown below.
 The project is built on Vivado 2022.2 and it's running in EGO1 Board. There is no IP core used so it's easy to be ported.
 
 ## 3.Demo
-
+![Uploading image.png…]()
 
 
 
